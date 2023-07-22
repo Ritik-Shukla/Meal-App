@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(52, 52, 52);
+}
+                                 /* css for navigation bar section start*/
+.navbar{
+    width: 100%;
+    height: 10%;
+    background: rgb(32, 30, 29);
+    display: flex;
+}
+.logo{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 30%;
+color: #fff;
+
+}
+.logo .logo-image{
+    height: 50%;
+    width: 15%;
+    margin-right: 3px;
+}
+.searchbar{
+width: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.favorite{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.favorite button{
+    width: 60%;
+    height: 70%;
+    background-color: rgb(254, 166, 3);
+    border-radius: 10px;
+}   
+.favorite button:hover{
+    width: 60%;
+    height: 70%;
+    color: rgb(254, 166, 3);
+    border-radius: 10px;
+    background-color: rgb(54, 49, 40);
+    border: 2px solid rgb(254, 166, 3);
+    cursor: pointer;
+}                          
+                        /* navigation bar css end  */
+
+                     /* meals item container section css  */
+.main{
+    width: 100%;
+    height: 90%; 
+}
+#mealsContainer
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(64, 64, 64);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+.card
+{
+    width: 15rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(47, 47, 47);
+    color: #fff;
+    margin-left: 2rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+}
+
+.card img
+{
+    width: 100%;
+    height: 60%; 
+}
+
+.card .name{
+    height: 20%;
+   width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 90%;
+    white-space: nowrap;
+    margin-left: 10px;
+    color: #ffae00;
+}
+
+.detail-sec{
+    display: flex;
+    align-items:center;
+    justify-content:space-evenly;
+}
+.card button
+{
+    width: 45%;
+    height: 2.5rem;
+    background-color: rgb(47, 47, 47);
+    color: #fff;
+    border: 3px solid #fff;
+    letter-spacing: 0.1px;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.card button:hover
+{
+    cursor: pointer;
+    width: 45%;
+    height: 2.5rem;
+    background-color: #fff;
+    color: rgb(47, 47, 47);
+    border: 3px solid #fff;
+    letter-spacing: 0.1px;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.card a{
+    display: inline-block;
+    width: 10%;
+    height: 8%;
+    text-align: center;
+    padding-top: 2%;
+    border-radius: 50px;
+    color:#fff ;
+}
+.card a i:hover{
+    transform: scale(1.5);
+}
+.favorite{
+    color: #fff ;
+}
+.clicked{
+    color: rgb(255, 0, 81) !important;
+}
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 2px 2px 2px #edc600,-2px -2px 2px #edc600;
+}
+
+.border-circle
+{
+    border-radius: 50px;
+}
+
+.details-page
+{
+    margin: 0 1% 2% 1%;
+    border: 1px solid #DFDFDF;
+    width: 70%;
+    color: white;
+    padding: 1%;
+    height: fit-content;
+}
+.details-page h3
+{
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #FDF3B7;
+    margin: 3%;
+}
+.details-page h5
+{
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #FDF3B7;
+    margin: 0 50% 0 5%;
+    display: inline;
+}
+.details-page img
+{
+    margin-left: 10%;
+    width: 80%;
+    height:30vh;
+}
+              /* css for the content which are getting after clicking the details button */
+.card2{
+    height: 96%;
+    width: 96%;
+    border: 1px solid #ffcc00;
+overflow: hidden;
+display: flex;
+flex-wrap: wrap;
+}
+ .card2 .left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card2 .left .left-mid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    width: 90%;
+    height: 90%;
+    border: 1px solid #ffcc00;
+}
+.card2 .left img{
+    width: 95%;
+    height: 95%;
+    border-radius: 2px;
+    border-radius: 5px;
+}
+.card2 .right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card2 .right .right-mid {
+    width: 99%;
+    height: 90%;
+    
+}
+.card2 .right .right-mid .name{
+    width: 90%;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgb(254, 166, 3);
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    display: inline-block;
+    overflow: hidden;
+}
+.card2 .right .right-mid .category_and_area{
+    font-weight: bold;
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: 1.6px;
+    margin-top: 2rem;
+    line-height: 2rem;
+}
+.card2 .right .right-mid .recipe h4{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: 1.7px;
+    margin-top: 2rem;
+    line-height: 2rem;
+}
+.card2 .right .right-mid .recipe p{
+    height: 10rem;
+    width: 97%;
+    color: #fff;
+    overflow: hidden;
+}
+.card2 .right .right-mid .moredetails{
+   padding-top: 3rem;
+}
+.card2 .right .right-mid .moredetails .video-button{
+    width: 20%;
+    height: 3rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    color: #3bf3ed;
+    background-color: rgb(64, 64, 64);
+    border: 3px solid #3bf3ed;
+ }
+ .card2 .right .right-mid .moredetails .more-button{
+    margin-left: 1rem;
+    width: 20%;
+    height: 3rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    color: #3bf3ed;
+    background-color: rgb(64, 64, 64);
+    border: 3px solid #3bf3ed;
+ }
+ .card2 .right .right-mid .moredetails .video-button:hover{
+    color: black;
+    background-color: #3bf3ed;
+    border: 3px solid rgb(64, 64, 64);
+    cursor: pointer;
+ }
+ .card2 .right .right-mid .moredetails .more-button:hover{
+    color: black;
+    background-color: #3bf3ed;
+    border: 3px solid rgb(64, 64, 64);
+    cursor: pointer;
+ }
